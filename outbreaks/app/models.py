@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Notices(models.Mode):
+class Notices(models.Model):
     id = models.AutoField('ID',primary_key=True)
     title = models.CharField('Title',max_length=100, null=False)
     detail = models.CharField('Details',max_length=125,null=False)
